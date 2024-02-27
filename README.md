@@ -4,7 +4,7 @@ Solution to https://devchallenges.io/challenge/minimal-blog-card
 
 ## Demo
 
-https://johncol.github.io/devchallenges-minimal-blog-card/
+<a href="https://johncol.github.io/devchallenges-minimal-blog-card/" target="_blank">johncol.github.io/devchallenges-minimal-blog-card</a>
 
 ## Assets
 
