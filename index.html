@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Minimal Blog Card - devchallenges.io</title>
+    <link rel="stylesheet" href="./card.css" />
+    <style>
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+      }
+
+      html {
+        height: 100%;
+      }
+
+      body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        background-color: salmon;
+      }
+
+      .wrapper {
+        height: 100%;
+        display: grid;
+        place-items: center;
+        background-color: hsl(60deg 6.67% 97.06%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <article class="card">
+        <figure class="image-wrapper">
+          <img
+            class="image"
+            alt="Bridge on a dark horizon"
+            src="./assets/jr-korpa-9XngoIpxcEo-unsplash-640x405.jpg"
+            srcset="
+              ./assets/jr-korpa-9XngoIpxcEo-unsplash-640x405.jpg   1x,
+              ./assets/jr-korpa-9XngoIpxcEo-unsplash-1920x1215.jpg 2x,
+              ./assets/jr-korpa-9XngoIpxcEo-unsplash-2400x1519.jpg 3x
+            "
+          />
+        </figure>
+        <ul class="tags">
+          <li class="tag">Design</li>
+          <li class="tag">UX</li>
+        </ul>
+        <h3 class="title">Embracing Minimalism</h3>
+        <p class="description">
+          From minimalist sculptures to minimalist paintings, this blog will
+          inspire you to appreciate the beauty that lies in simplicity.
+        </p>
+        <footer>
+          <p class="author">Annie Spratt</p>
+        </footer>
+      </article>
+    </div>
+  </body>
+</html>
