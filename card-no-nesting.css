@@ -8,7 +8,8 @@
   --color-grey-6: hsl(221, 8%, 46%);
   --color-grey-2: hsla(225, 41%, 11%, 0.1);
 
-  --font-weight-default: 300;
+  --font-weight-default: 200;
+  --font-weight-strong: 300;
   --font-weight-bold: 500;
   --font-weight-boldest: 600;
   --default-spacing: 16px;
@@ -21,7 +22,7 @@
   min-width: 300px;
   width: min(100%, 368px);
   overflow: hidden;
-  border-radius: 16px;
+  border-radius: 12px;
   filter: drop-shadow(0px 30px 100px var(--color-grey-2));
 }
 
@@ -42,7 +43,8 @@
 }
 
 .card .tags {
-  padding-bottom: var(--default-spacing);
+  --pixel-perfect-fix: 1px;
+  padding-bottom: calc(var(--default-spacing) + var(--pixel-perfect-fix));
 }
 
 .card .title {
@@ -50,12 +52,13 @@
 }
 
 .card .description {
-  padding-bottom: 20px;
+  --pixel-perfect-fix: -1px;
+  padding-bottom: calc(20px + var(--pixel-perfect-fix));
   line-height: 1.5;
 }
 
 .card footer {
-  padding-top: 18px;
+  padding-top: 20px;
   padding-bottom: 20px;
 }
 
@@ -75,7 +78,7 @@
 
 .card .tag {
   border-radius: 999px;
-  padding: 6px 16px;
+  padding: 4px 16px;
   font-size: calc(10 / 16 * 1rem);
   font-weight: var(--font-weight-boldest);
   color: var(--color-purple);
@@ -103,5 +106,6 @@
 
 .card .author {
   font-size: calc(12 / 16 * 1rem);
+  font-weight: var(--font-weight-strong);
   color: var(--color-grey-6);
 }
