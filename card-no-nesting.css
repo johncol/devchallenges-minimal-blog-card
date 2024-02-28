@@ -19,6 +19,7 @@
     "Helvetica Neue", Arial, sans-serif;
   font-family: 'Sora', var(--os-sans-serif);
 
+  margin: 164px auto 0;
   min-width: 300px;
   width: min(100%, 368px);
   overflow: hidden;
