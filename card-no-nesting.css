@@ -8,7 +8,9 @@
   --color-grey-6: hsl(221, 8%, 46%);
   --color-grey-2: hsla(225, 41%, 11%, 0.1);
 
+  --font-weight-default: 300;
   --font-weight-bold: 500;
+  --font-weight-boldest: 600;
   --default-spacing: 16px;
 
   --os-sans-serif:
@@ -75,6 +77,7 @@
   border-radius: 999px;
   padding: 6px 16px;
   font-size: calc(10 / 16 * 1rem);
+  font-weight: var(--font-weight-boldest);
   color: var(--color-purple);
   background-color: var(--color-purple-light);
   white-space: nowrap;
@@ -89,6 +92,7 @@
 
 .card .description {
   font-size: calc(14 / 16 * 1rem);
+  font-weight: var(--font-weight-default);
   color: var(--color-grey-6);
   text-wrap: balance;
 }
