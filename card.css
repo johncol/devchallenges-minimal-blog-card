@@ -8,8 +8,8 @@
   --color-grey-6: hsl(221, 8%, 46%);
   --color-grey-2: hsla(225, 41%, 11%, 0.1);
 
-  --font-weight-default: 200;
-  --font-weight-strong: 300;
+  --font-weight-default: 300;
+  --font-weight-strong: 400;
   --font-weight-bold: 500;
   --font-weight-boldest: 600;
   --default-spacing: 16px;
